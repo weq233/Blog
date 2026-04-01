@@ -1,0 +1,227 @@
+// 全局样式变量
+$primary-color: #409eff;
+$success-color: #67c23a;
+$warning-color: #e6a23c;
+$danger-color: #f56c6c;
+$info-color: #909399;
+
+// 重置样式
+
+// 管理后台深色主题表格样式
+.dark-table {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  
+  &::before {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  th {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  td {
+    color: rgba(255, 255, 255, 0.85) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    background: transparent !important;
+  }
+  
+  tr {
+    background: transparent !important;
+    
+    &:hover {
+      td {
+        background: rgba(255, 255, 255, 0.05) !important;
+      }
+    }
+  }
+  
+  // 空状态样式
+  .el-table__empty-text {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+  
+  // 分页器样式
+  .el-pagination {
+    color: rgba(255, 255, 255, 0.85) !important;
+    
+    .el-pager li {
+      color: rgba(255, 255, 255, 0.6) !important;
+      background: transparent !important;
+      
+      &.is-active {
+        color: #fff !important;
+        background: rgba(102, 126, 234, 0.5) !important;
+      }
+      
+      &:hover {
+        color: rgba(255, 255, 255, 0.95) !important;
+      }
+    }
+    
+    .btn-prev,
+    .btn-next {
+      color: rgba(255, 255, 255, 0.6) !important;
+      background: transparent !important;
+      
+      &:hover {
+        color: rgba(255, 255, 255, 0.95) !important;
+      }
+    }
+    
+    .el-select {
+      .el-input {
+        .el-input__wrapper {
+          background: rgba(255, 255, 255, 0.05) !important;
+          
+          .el-input__inner {
+            color: rgba(255, 255, 255, 0.85) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 管理后台深色选择器样式
+.dark-select {
+  .el-input__wrapper {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    
+    .el-input__inner {
+      color: rgba(255, 255, 255, 0.95) !important;
+    }
+  }
+  
+  .el-select__wrapper {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+  
+  .el-dropdown {
+    color: rgba(255, 255, 255, 0.85) !important;
+  }
+}
+
+// 管理后台深色按钮样式
+.dark-input {
+  .el-input-group__append,
+  .el-input-group__prepend {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(255, 255, 255, 0.1) !important;
+    
+    .el-button {
+      background: rgba(102, 126, 234, 0.5) !important;
+      border-color: rgba(102, 126, 234, 0.5) !important;
+      color: rgba(255, 255, 255, 0.95) !important;
+      
+      &:hover {
+        background: rgba(102, 126, 234, 0.7) !important;
+        border-color: rgba(102, 126, 234, 0.7) !important;
+      }
+      
+      .el-icon {
+        color: rgba(255, 255, 255, 0.95) !important;
+      }
+    }
+  }
+}
+
+// 管理后台搜索栏样式
+.search-bar {
+  .el-button {
+    background: rgba(102, 126, 234, 0.5) !important;
+    border-color: rgba(102, 126, 234, 0.5) !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+    
+    &:hover {
+      background: rgba(102, 126, 234, 0.7) !important;
+      border-color: rgba(102, 126, 234, 0.7) !important;
+    }
+  }
+  
+  .el-input__wrapper {
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    
+    .el-input__inner {
+      color: rgba(255, 255, 255, 0.95) !important;
+      
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.4) !important;
+      }
+    }
+  }
+}
+
+// 全局下拉菜单弹出层深色样式（挂载在 body 下）
+body {
+  .el-select-dropdown {
+    background: rgba(30, 30, 47, 0.98) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+    
+    .el-select-dropdown__item {
+      color: rgba(255, 255, 255, 0.85) !important;
+      
+      &.hover,
+      &:hover {
+        background: rgba(255, 255, 255, 0.05) !important;
+      }
+      
+      &.selected {
+        background: rgba(102, 126, 234, 0.3) !important;
+        color: rgba(255, 255, 255, 0.95) !important;
+      }
+    }
+  }
+  
+  .el-select-dropdown__wrap {
+    background: rgba(30, 30, 47, 0.98) !important;
+  }
+  
+  .el-scrollbar {
+    background: rgba(30, 30, 47, 0.98) !important;
+    
+    .el-scrollbar__bar {
+      &.is-vertical {
+        background: rgba(255, 255, 255, 0.1) !important;
+      }
+      
+      .el-scrollbar__thumb {
+        background: rgba(255, 255, 255, 0.3) !important;
+        
+        &:hover {
+          background: rgba(255, 255, 255, 0.5) !important;
+        }
+      }
+    }
+  }
+  
+  // 下拉框输入框深色样式
+  .el-select {
+    .el-input__wrapper {
+      background: rgba(255, 255, 255, 0.05) !important;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1) !important;
+      
+      .el-input__inner {
+        color: rgba(255, 255, 255, 0.95) !important;
+        
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.4) !important;
+        }
+      }
+    }
+    
+    .el-select__caret {
+      color: rgba(255, 255, 255, 0.6) !important;
+    }
+  }
+}
