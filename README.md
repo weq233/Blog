@@ -985,25 +985,6 @@ MIT License
 
 ---
 
-## 👥 开发团队
-
-- 前端：Vue 3 + Vite + Element Plus
-- 后端：Go + Beego v2
-- 数据库：MySQL
-- UI 设计：Figma
-
----
-
-## 📞 联系方式
-
-如有问题或建议，请通过以下方式联系：
-
-- 📧 Email: support@yourblog.com
-- 💬 Issues: https://github.com/yourname/blog-system/issues
-- 📖 Wiki: https://github.com/yourname/blog-system/wiki
-
----
-
 ## 🙏 致谢
 
 感谢以下开源项目：
